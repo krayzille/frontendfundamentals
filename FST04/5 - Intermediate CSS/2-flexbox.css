@@ -1,0 +1,52 @@
+/* Resposnsive */
+.flexContainer {
+  display: flex;
+  /* x or  main axis */
+  flex-direction: row; /*Default*/
+  /* y or cross axis */
+  flex-direction: column;
+  flex-direction: row;
+  /* Justify Content - alignment of items inside parent; x axis */
+  justify-content: flex-end;
+  justify-content: center;
+  /* Gather space - all sides equal  */
+  justify-content: space-between;
+  /* Gather edges - middle space is equal*/
+  justify-content: space-around;
+  /*Depends on the ammounts of items in container */
+  justify-content: space-evenly;
+  justify-content: flex-start; /*Default */
+  /* justify-content: space-evenly; */
+
+  /* Align-items on y axis */
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch; /*Default*/
+
+  /* Flex Wrap - allows content not to squish and will response to the width of the vieport */
+  flex-wrap: nowrap; /*Default*/
+  flex-wrap: wrap;
+  /* Contents will be reversed */
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
+
+  /* Column and Row Gap */
+  gap: 20px;
+  column-gap: 50px;
+  row-gap: 100px;
+
+  /* Use row if flex direction is column then vice versa */
+}
+/* Flex-grow helps increase and flex-shrink helps decrease the box */
+/* 0 is default for both */
+.flexItem1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.flexItem2 {
+  flex-shrink: 2;
+}
+.flexItem3 {
+  flex-shrink: 1;
+}

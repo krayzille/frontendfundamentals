@@ -1,0 +1,23 @@
+# Make directory
+mkdir [directory_name]
+
+# Remove directory
+rmdir [directory_name]
+
+# Print/Present Working directory
+pwd
+
+# List command
+ls 
+
+# Change directory
+cd [directory_path]
+
+# Go back one directory
+cd ..
+
+# Create files
+touch [filename.extension]
+
+# Remove files
+rm [filename.extension]

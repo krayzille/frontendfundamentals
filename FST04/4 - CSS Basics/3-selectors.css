@@ -1,0 +1,42 @@
+/* Element Selector use the HTMK Tag Names */
+span{
+    background-color: gold;
+}
+/* Class Selector uses class to get HTML ELEMENTS */
+.intro-paragraphs{
+    background-color: red;
+}
+/* ID selector uses the ID of HTML ELEMENTS */
+#main-heading{
+    background-color: violet;
+}
+/* Universal Selector selects everything */
+*{
+    background-color: skyblue;
+}
+/* Grouping Selector, selects multiple elements at once */
+#one, #two{
+    color:purple;
+}
+.about-content, h1, h2{
+    font-size: 16px;
+}
+/* Descendant Selector, calls from Ancestor/ Descendants Elements */
+.article-container p{
+    background-color: royalblue;
+}
+/* Pseudo Classes */
+/* Uses : as indicator such as link,  hover, active, visited */
+a:link{
+    color:green;
+}
+a:hover{background-color: pink;
+}
+a:active{
+    background-color: gold;
+}
+a:visited{
+    color:darkred;
+    
+}
+/* Other properties can be still used */

@@ -1,0 +1,33 @@
+#relative {
+  /* relative position can get out of the parent container */
+  /* Relative to it's ORIGINAL position */
+  background-color: #ffcc00;
+  position: relative;
+  top: 0px;
+  left: 50px;
+}
+#absolute
+/* relative to the PARENT contatiner, otherwise relative to viewport */
+/* cannot leave the parent container */
+/* Removes it on the NORMAL html document flow */ {
+  background-color: tomato;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#fixed {
+  /* relative to the vviewport */
+  /* known as freezing the certain content whenever it is scrolled */
+  background-color: darkblue;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+}
+#sticky {
+  /* freezing but has a space */
+  /* goes pass the viewport */
+  background-color: purple;
+  position: sticky;
+  top: 50px;
+}

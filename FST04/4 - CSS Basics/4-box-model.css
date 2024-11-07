@@ -1,0 +1,50 @@
+.box1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20 px;
+  padding-right: 10px;
+}
+.box2 {
+  /* Padding shorthand */
+  /* All Sides */
+  padding: 10px;
+  /* Top-Bottom Left-right */
+  padding: 10px 20px;
+  /* Top Left-right Bottom */
+  padding: 10px 30px 20px;
+  /* Top Left Right Bottom */
+  padding: 50px 50px 50px 50px;
+}
+.box3 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.box4 {
+  /* Margin shorthand */
+  margin: 10px;
+  margin: 30px 30px;
+  margin: 10px 10px 10px;
+  margin: 50px 50px 50px 50px;
+}
+.mix-borders {
+  background-color: aquamarine;
+  height: 100px;
+  width: 200px;
+  /* top-bottom left-right bottom left */
+  border-style: solid dashed dotted double;
+  border-width: 5px 5px 5px 5px;
+  border-color: red blue green yellow;
+  /* Shorthand Version */
+  border: 10px black solid;
+  border: 15px tomato dashed;
+}
+.circle-container {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: pink;
+}

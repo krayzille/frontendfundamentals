@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h2>HTML Forms</h2>
+        <form>
+            <!-- Word Wrap is Alt + Z pr check Files..View..WordWrap -->
+            <!-- Textfield Input with Label -->
+
+            <!-- Input Field For Username-->
+            <div>
+                <label for="username">*Username:</label>
+                <input type="text" name="username" placeholder="John Doe" id="username" required>
+            </div>
+
+            <br>
+
+            <!-- Input Field For Email -->
+            <div>
+                <label for="email">*Email Address:</label>
+                <input type="email" name="email" placeholder="example@email.com" id="email" required>
+            </div>
+
+
+            <!-- Input field for Passwords -->
+            <br>
+            <div>
+                <label for="password">*Password: </label>
+                <input type="password" name="email" id="password" placeholder="password" required>
+            </div>
+
+            
+
+             <!-- Input field for Numbers -->
+             <br> 
+             <div>
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="" min="0" max="18">
+            </div>
+
+    
+            <!-- Text Area -->
+            <br>
+            <div>
+                <label for="message"    >Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="25" rows="5"></textarea>
+            </div>
+
+            <!-- Dropdown list -->
+             <br>
+             <div>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <!-- Value represents the value being stored in the data -->
+                    <!-- Disabled selected helps with the null as not to be selected but it consider in the option -->
+                    <option value="" disabled selected>Please select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+             </div>
+
+             <!-- Radio Buttons -->
+              <!-- Making sure it connects... -->
+               <!-- For and Name connects for the form whilts the id and value is for data -->
+                <!-- Requires a Name because of only one value -->
+              <br>
+              <div>
+                <label for="color">Favorite Color:
+                <br>
+                <input type="radio" name="color" value="red" id="red">
+                <label for="red">Red</label>
+                <br>
+                <input type="radio" name="color" value="blue" id="blue">
+                <label for="red">Blue</label>
+                <br>
+                <input type="radio" name="color" value="green" id="green">
+                <label for="red">Green</label>
+              </div>
+
+               <!-- Checkboxes -->  
+              <!-- Multicursor can be use by Alt and dragging the text -->
+            <br>
+            <div>
+                
+                <label for="todo">To Do List</label>
+                <br>
+                <input type="checkbox" value="grocery" id="grocery" name="todo">
+                <label for="" id="">Grocery</label>
+                <br>
+                <input type="checkbox" value="laundry" id="laundry" name="todo">
+                <label for="" id="">Laundry</label>
+                <br>
+                <input type="checkbox" value="cooking" id="cooking" name="todo">
+                <label for="" id="">Cooking</label>
+
+            </div>
+
+            <!-- Reset button clears all entry, does not send -->
+            <br>
+            <button type="reset">Reset</button>
+            <!-- Clears and submits the entry at the same time results can be seen in URL -->
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>

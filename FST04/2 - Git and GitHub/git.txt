@@ -1,0 +1,45 @@
+Git Version
+git --version
+
+git config --global user.name "username"
+git config --global user.email "email"
+git config user.name 
+git config user.email
+
+// Initialized into a Git Repository
+git init
+
+
+// Git Three Stages 
+
+// add files to the staging area
+git add .
+
+//git commit -m "Message"
+
+//Add a branch to our repository
+git branch "firstbranch"
+
+//list of all the branches
+git branch -a
+
+//switching to a different branch
+git checkout firstbranch
+
+//merging branch to the main branch
+git merge firstbranch
+
+//removing branch
+git branch -d [branchname]
+
+// Connnecting to github
+git remote add origin [websitename]
+
+//Changing  it to main for consistency
+git branch -M main
+
+//Pushes our local repository to remote repository - need to use after creating the remote repository 
+git push -u  origin  main
+
+//Pushes to our remote repository
+git push

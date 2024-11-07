@@ -1,0 +1,65 @@
+.gridContainer {
+  display: grid;
+
+  /* Set amount of columns */
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  /* Set amount of rows */
+  grid-template-rows: 200px 200px 200px;
+
+  /* Using Auto let computer reads*/
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+
+  /* Using Percentages */
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+
+  /* Using Fr - Fractional Unit */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  /* Using repeat() */
+  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(5, 200px);
+
+  /* Column and Row Gaps */
+  /* Changes gap both column and row */
+  gap: 20px;
+  column-gap: 0px;
+  row-gap: 0px;
+}
+
+/* Media Queries */
+/* To set for device width/height */
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  /* Tablets */
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  /* Mobile Phones */
+  @media screen and (max-width: 480px) {
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+/* 
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/

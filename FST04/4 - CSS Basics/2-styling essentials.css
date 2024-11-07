@@ -1,0 +1,121 @@
+/* Decleration blocks are these pair of {} curly braces */
+/* CSS is a combination of Property : value; */
+/* Last thing it reads will become the actual code */
+#text-styling{
+    font-family:'Times New Roman', Times, serif;
+    /* Word Values */
+    /* Font Weight */
+    font-weight: bolder;
+    font-weight: lighter;
+    font-weight: bold;
+    /* Default */
+    font-weight: normal;
+
+    /* Numerical Values */
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 1000;
+    font-weight: normal;
+
+    /* Font Style */
+    font-style: italic; 
+    font-style: normal;
+    font-style: oblique;
+
+    /* Text Align */
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+
+    /* Line Height */
+    line-height: 5;
+    line-height: 10;
+    line-height: 90%;
+    line-height: 100%;
+    line-height: normal;
+    line-height: 24px;
+
+    /* Letter Spacing */
+    letter-spacing: 4px;
+    letter-spacing: 12px;
+    letter-spacing: normal;
+    letter-spacing: -4px;
+    letter-spacing: normal;
+}
+#text-decoration{
+    /* Text Decoration
+    text-decoration: none;  /*default*/
+    /* text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: underline; */
+    /* text-decoration: none; */
+
+    /* Text Decoration Style */
+    /* text-decoration-style: solid;
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: wavy; */
+
+    /* Text Decoration Color */
+    /* text-decoration-color: gold;
+    text-decoration-color:green; */
+
+    /* Text Decoration Thickness  */
+    /* text-decoration-thickness:10px;
+    text-decoration-thickness: 2px; */ 
+
+    /* Text Decoration Combined (Style, Color, Thickness */
+    text-decoration: underline overline  line-through;
+    text-decoration:line-through wavy gold;
+    text-decoration: overline  dashed 10px;
+}
+
+#colors{
+    /* Keyword Color Values */
+    /* color:red;
+    color:gold;
+    color: goldenrod;
+    background-color: red; */
+
+    /* RGB - Red, Green, Blue */
+    /* RGBA - Red Green Blue and Alpha */
+    /* color:rgb(346,97,97); */
+    /* Alpha refers to opacity or transparency */
+    /* color: rgba(0, 0, 0, 0.151); */
+
+    /* Hexadecimal Values */
+    /* 16 Base Numbering System */
+    /* 0,1,2,3,4,5,6,7,8,9, A, B,C, D, E, F*/
+    /* A - 10 */
+    /* B - 11 */
+    /* C - 12 */
+    /* D - 13 */
+    /* E - 14 */
+    /* F - 15 */
+    /* Hexadecimal  Value #000000 */
+    /* You can add Alpha to Hexadecimals */
+    color:#00F00000; /* Two pairs symbolizes RED BLUE and GREEN*/
+    color:#aa0000;
+    color: #00f000ff;
+} 
+#absolute-unit-px{
+    /* Default px size */
+    font-size: 16px;  
+    font-size: 30px;
+    font-size: 8px;
+    font-size: 16px; /*this is that root element*/
+}
+#relative-unit-em{
+    /* Default em Size */
+    font-size: 1em;
+    /* Since relative-unit-em class is in a child elemnt (refer to html) it will be 40px - 20*3 . If it changes to px then it will follow the parent element*/
+    font-size: 2em;
+}
+#relative-unit-rem{
+    /* Rem will be multiplied to the value of the root element fontsize, which is 16px */
+    font-size: 2rem;
+
+}
